@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\dist\client-app\3rdpartylicenses.txt" />
+    <Content Remove="wwwroot\dist\client-app\favicon.ico" />
+    <Content Remove="wwwroot\dist\client-app\index.html" />
+    <Content Remove="wwwroot\dist\client-app\main.f3a2ea841f871854.js" />
+    <Content Remove="wwwroot\dist\client-app\polyfills.ae91e41ffb49937e.js" />
+    <Content Remove="wwwroot\dist\client-app\runtime.00285116a9b7ab64.js" />
+    <Content Remove="wwwroot\dist\client-app\styles.ef46db3751d8e999.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\3rdpartylicenses.txt" />
+    <None Include="wwwroot\favicon.ico" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\main.f3a2ea841f871854.js" />
+    <None Include="wwwroot\polyfills.ae91e41ffb49937e.js" />
+    <None Include="wwwroot\runtime.00285116a9b7ab64.js" />
+    <None Include="wwwroot\styles.ef46db3751d8e999.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\dist\client-app\" />
+  </ItemGroup>
+
+</Project>
