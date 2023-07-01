@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+.angular/cache/16.1.3
+./*/angular/cache/16.1.3
